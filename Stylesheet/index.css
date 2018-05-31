@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+.both {
+  background: black;
+  height: 50%;
+}
+.indexPage {
+  background:url("Pictures/frontPageBackground.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+.greeting {
+  color: White;
+  display: inline-block;
+  position: relative;
+  transform-style:preserve-3d;
+  z-index: 1;
+}
+.greeting:before, .greeting:after{
+  content: attr(data-letter);
+  left:0;
+  position:absolute;
+  top:0;
+  transform-origin: top left;
+}
+.greeting, .greeting:before, .greeting:after{
+  transition: all 0.3s ease-in-out;
+}
+.greeting:before{
+  color: #fff;
+  text-shadow:
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.greeting:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.greeting:hover:before{
+  color: red;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.greeting:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+.main {
+  position: relative;
+}
+.openerText {
+  color: white;
+  font-size: 40px;
+  position: relative;
+  white-space: nowrap;
+}
+.mirror {
+  background-image:
+    linear-gradient(180deg,rgba(37,116,236,.0) 10%,rgba(37,116,236,0.9));
+  color: transparent;
+  display: inline-block;
+  top: -80px;
+  transform: scaleX(-1);
+  transform:rotateX(180deg);
+  -webkit-background-clip: text;
+}
+
+.text {
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px){
+  .openerText {
+    font-size: 28px;
+  }
+
+  .mirror {
+    top: -55px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .openerText {
+    font-size: 25px;
+  }
+
+  .mirror {
+    top: -50px;
+  }
+}
