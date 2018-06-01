@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thi N. - Home</title>
   <link rel="stylesheet" href="Stylesheet/index.css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body class="indexPage">
   <div class="text">
@@ -17,15 +18,34 @@
     <h1 class="greeting" data-letter="o"> o </h1>
     <h1 class="greeting" data-letter="!"> ! </h1>
 
-    <div class="openerText both">
-      <p class="openerText main">My name is Thi Nguyen, and I'm a software engineer. </p>
-      <p class="openerText mirror">My name is Thi Nguyen, and I'm a software engineer. </p>
+    <div id="blackBox">
+      <div class="openerText both">
+        <p class="openerText main">I'm Thi Nguyen, and I'm a software engineer. </p>
+        <p class="openerText mirror">I'm Thi Nguyen, and I'm a software engineer. </p>
+      </div>
+
+      <div class="icons">
+        <div class="icon">
+          <div class="aboutText">
+            <p class="icon-contents">This page includes my residential information,
+            a list of my skills, some hobbies, and my current focus. </p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="experienceText">
+            <p class="icon-contents">Clicking this icon will display my education
+              information, some projects details, and work experience.</p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="contactText">
+            <p class="icon-contents">Email: <a href="mailto:n_thi@outlook.com"
+              target="_top">N_Thi@outlook.com</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="icons">
-
-  </div>
-
+  <script src="Stylesheet/script.js"></script>
 </body>
 </html>

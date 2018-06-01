@@ -3,10 +3,99 @@
   box-sizing:border-box;
 }
 
+#blackBox {
+  background-color: black;
+  margin: 60px 60px 10px 60px;
+  height: 500px;
+  width: auto;
+}
+
 .both {
-  background: black;
   height: 50%;
 }
+
+.icons {
+  justify-content: center;
+  align-items: : center;
+  display: flex;
+  position: relative;
+  top: -200px;
+}
+
+.icons p, a {
+  font-size: 30px;
+  color: white;
+}
+
+.icon-contents {
+  display: none;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+}
+
+.aboutText, .experienceText, .contactText{
+  width: 300px;
+  height:300px;
+  position: relative;
+  margin: 20px;
+  z-index: 1;
+}
+
+.aboutText {
+  background:url("Pictures/AboutMeText.png") no-repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+
+}
+
+.aboutText:hover {
+  background:url("Pictures/AboutMeIcon.png") no-repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
+.experienceText {
+  background:url("Pictures/ExperienceText.png") no-repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
+.experienceText:hover {
+  background:url("Pictures/ExperienceIcon.png") no-repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
+.contactText {
+  background:url("Pictures/ContactText.png") no-repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
+.contactText:hover {
+  background:url("Pictures/ContactIcon.png") no-repeat center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+}
+
+.text-active {
+  display: block;
+}
+
+
 .indexPage {
   background:url("Pictures/frontPageBackground.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -23,9 +112,9 @@
 }
 .greeting:before, .greeting:after{
   content: attr(data-letter);
-  left:0;
-  position:absolute;
-  top:0;
+  left: 0;
+  position: absolute;
+  top: 0;
   transform-origin: top left;
 }
 .greeting, .greeting:before, .greeting:after{
@@ -88,7 +177,6 @@
 }
 
 .text {
-  margin: auto;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -102,14 +190,40 @@
   .mirror {
     top: -55px;
   }
+
+  .aboutText, .experienceText, .contactText{
+    width: 200px;
+    height:200px;
+  }
+
+  .icons p, a {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px){
+  #blackBox {
+    height: 450px;
+  }
+
   .openerText {
     font-size: 25px;
   }
 
   .mirror {
     top: -50px;
+  }
+
+  .aboutText, .experienceText, .contactText{
+    width: 100px;
+    height:100px;
+  }
+
+  .icons p, a {
+    font-size: 10px;
+  }
+
+  .icon-contents {
+    top: 100px;
   }
 }
