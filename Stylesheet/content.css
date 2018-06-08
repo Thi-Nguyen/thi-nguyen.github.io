@@ -1,6 +1,29 @@
+.aboutBorder, .experienceBorder, .contactBorder{
+  background-color: white;
+  color: blue;
+  margin-bottom: 20px;
+  -webkit-border-radius: 50px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius: 50px;
+  -moz-border-radius-bottomright: 5px;
+  border-radius: 50px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 20px;
+  border-style: double;
+}
+
 .active {
-    background-color: blue;
-    color: white;
+  background-color: blue;
+  color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
 }
 
 .return {
@@ -10,16 +33,15 @@
   padding-bottom: 20px;
 }
 
-p {
-  font-size: 50px;
-  color: red;
-}
-
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 200px;
+}
+
+span {
+  font-weight: bold;
 }
 
 li a {
@@ -46,6 +68,10 @@ nav {
   background-image: url("Pictures/frontPageBackground.jpg");
   overflow-x: hidden;
   padding-top: 20px;
+}
+
+p a{
+  text-decoration: none;
 }
 
 .content-container {

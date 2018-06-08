@@ -5,9 +5,10 @@
 
 #blackBox {
   background-color: black;
-  margin: 30px 60px 10px 60px;
-  height: 500px;
+  margin: 10px 60px 10px 60px;
+  height: 100%;
   width: auto;
+  padding-top: 10px;
 }
 
 .both {
@@ -19,7 +20,7 @@
   align-items: : center;
   display: flex;
   position: relative;
-  top: -200px;
+  top: -180px;
 }
 
 .icons p, a {
@@ -96,7 +97,7 @@
 }
 
 .background {
-  background:url("Pictures/frontPageBackground.jpg") no-repeat center center fixed;
+  background:url("Pictures/background.jpg") no-repeat center center fixed;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -181,6 +182,7 @@
   text-align: center;
 }
 
+
 @media only screen and (max-width: 900px){
   .openerText {
     font-size: 28px;
@@ -196,6 +198,10 @@
     margin: 5px;
   }
 
+  .icons {
+    top: -100px;
+  }
+
   .icons p, a {
     font-size: 20px;
   }
@@ -206,10 +212,6 @@
 }
 
 @media only screen and (max-width: 600px){
-  #blackBox {
-    height: 100%;
-  }
-
   .openerText {
     font-size: 25px;
   }
@@ -225,9 +227,8 @@
   }
 
   .icons {
-    top: -50px;
+    top: -60px;
   }
-
 
   .icons p, a {
     font-size: 10px;
